@@ -6,7 +6,7 @@
 import Foundation
 
 public class GetiPhoneModel {
-    static func model( completion: @escaping((String) -> Void)) {
+    public static func model( completion: @escaping((String) -> Void)) {
         let unrecognized = "?unrecognized?"
         guard let wikiUrl=URL(string: "https://www.theiphonewiki.com//w/api.php?action=parse&format=json&page=Models") else { return completion(unrecognized) }
         var identifier: String {
